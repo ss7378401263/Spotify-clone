@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position:sticky;
+    align-items: center;
+    display: flex;
+    background: rgb(0, 0, 0);
+    padding: 6px 2px;
+    height: 5vh;
+    top: 0;
+    
+}
+nav ul{
+    font-size: 1.5rem;
+   
+    align-items: center;
+    display: flex;
+    list-style: none;
+    color: white;
+
+}
+
+nav ul li{
+    font-family: "Ubuntu", serif;
+  font-weight: 300;
+  font-style: normal;
+    padding: 0 12px;
+}
+.brand img{
+    padding: 0 8px;
+    width: 6vh;
+}
+.brand{
+    font-weight: bolder;
+    align-items: center;
+    display: flex;
+}
+.container{
+    background-image:url("ss.jpg");
+    border-radius: 12px;
+    padding: 34px;
+    margin: 10px auto;
+    width: 75%;
+    color: white;
+    background-color: black;
+    display: flex;
+    min-height: 75vh;
+    font-family: "Ubuntu", serif;
+    
+}
+  
+  
+.songItem{margin: 10px 0px;
+   
+    justify-content: space-between;
+    border-radius: 29px;
+    align-items: center;
+    display: flex;
+    height: 44px;
+    COLOR: black;
+    background-color: white;
+    
+
+  
+   
+}
+
+.timestamp{
+    margin: 0px 23px;
+   
+  }
+
+.songContainer{
+    margin-top: 65px;
+
+}
+.songItem img{
+    border-radius: 40px;
+    
+    margin: 2px 16px;
+    width: 39px;
+}
+.bottom{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 100px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+
+}
+#myProgressBar{
+    width: 80vw;
+}
+.icons{
+    margin-top: 14px;
+
+}
+.icons i{
+    cursor: pointer;
+    padding: 0px 6px;
+}
+
+@media (max-width: 768px) {
+    .songContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .songItem img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #myProgressBar {
+        width: 80%;
+    }
+
+    .icons i {
+        font-size: 2em;
+    }
+
+    .songInfo {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .songContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .songItem img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .songName {
+        font-size: 0.8em;
+    }
+
+    .timestamp {
+        font-size: 0.8em;
+    }
+
+    .icons i {
+        font-size: 1.8em;
+    }
+
+    .bottom {
+        padding: 10px;
+    }
+
+    #myProgressBar {
+        width: 90%;
+    }
+
+    .songInfo {
+        font-size: 0.8em;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .songItem img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .songName {
+        font-size: 0.7em;
+    }
+
+    .timestamp {
+        font-size: 0.7em;
+    }
+
+    .icons i {
+        font-size: 1.5em;
+    }
+
+    .bottom {
+        padding: 8px;
+        flex-direction: column;
+    }
+
+    .songInfo {
+        font-size: 0.7em;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .songContainer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .songItem img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bottom {
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    #myProgressBar {
+        width: 60%;
+    }
+
+    .icons i {
+        font-size: 1.8em;
+    }
+
+    .songInfo {
+        margin-top: 10px;
+    }
+}
